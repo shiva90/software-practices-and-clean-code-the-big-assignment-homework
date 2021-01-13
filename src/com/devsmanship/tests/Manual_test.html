@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>Manual Test</title>
+</head>
+
+<style type="text/css">
+	body {
+		background-image: linear-gradient(to right, #e1a060, #bf8555);
+		color: white;
+		font-family: Tahoma;
+	}	
+	
+	 a {
+		color: #fbe0ba;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto;
+	}
+	
+	.grid-item {
+	  text-align: center;
+	}
+		
+	.center {
+	  margin: auto;
+	  width: 50%;
+	  padding: 10px;
+	}
+		
+	#wrapper {
+		text-align:center;
+	}
+	
+
+	code {
+		background-color: #fbe0ba;
+		border: 3px solid #c68c55;
+		display: block;
+		padding: 20px;
+		color: #996633;
+	}
+	
+	#tests {
+		width: 650px;
+		text-align:center;
+	}
+</style>
+	
+<body id="wrapper">
+<div id="logo">
+	<h1>Manual Tests</h1>
+	<a href="https://devsmanship.com" target="_blank"><img src="devsmanship_logo.png" width="200px" /></a>
+</div>
+
+<div id="tests" class="center">
+
+<h4>Use the <a href="https://www.diffchecker.com/" target="_blank">Diff checker tool</a> for the comparison</h4>
+
+
+<div class="grid-container">
+
+	<div class="grid-item">
+		<h3>For "save" argument the output of the program should be:</h3>
+
+		<code>
+		<pre>
+6 cars saved.
+===================
+= Standard Report =
+===================
+
+Model: BMW
+Year: 2019
+Price: 200000.0
+Color: yellow
+Number Of Doors: 4
+
+Model: AUDI
+Year: 1999
+Price: 2000.0
+Color: black
+Number Of Doors: 2
+
+Model: CAR1
+Year: 2000
+Price: 12000.0
+Color: green
+Number Of Doors: 4
+
+Model: CAR2
+Year: 2020
+Price: 50020.0
+Color: red
+Number Of Doors: 4
+
+Model: CAR3
+Year: 1995
+Price: 50500.0
+Color: white
+Number Of Doors: 4
+
+Model: CAR4
+Year: 1999
+Price: 53000.0
+Color: white
+Number Of Doors: 4
+
+
+Printed 6 cars
+=================
+= End of Report =
+=================
+		</pre>
+		</code>
+	</div>
+
+	
+	<div class="grid-item">
+		<h3>For "report" argument the output of the program should be:</h3>
+
+		<code>
+		<pre>
+===================
+= Standard Report =
+===================
+
+Model: BMW
+Year: 2019
+Price: 200000.0
+Color: yellow
+Number Of Doors: 4
+
+Model: CAR2
+Year: 2020
+Price: 50020.0
+Color: red
+Number Of Doors: 4
+
+
+Printed 2 cars
+=================
+= End of Report =
+=================
+=====================
+= Only Model Report =
+=====================
+
+Model: BMW
+
+Model: CAR2
+
+
+Printed 2 cars
+=================
+= End of Report =
+=================
+		</pre>
+		</code>
+	
+	</div>
+	
+
+</div>
+
+</div>
+
+</body>
+</html>
