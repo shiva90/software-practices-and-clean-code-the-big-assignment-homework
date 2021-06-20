@@ -6,7 +6,7 @@ public class Program {
 
     public static void main(String[] args) throws IOException {
         if(args.length == 0) {
-            System.out.println("NO ACTION");
+            System.out.println("NO ACTION IS REQUIRED ..");
             return;
         }
         String action = args[0];
